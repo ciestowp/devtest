@@ -1,0 +1,35 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  job_one:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using ssh keys
+      uses: appleboy/ssh-action@master
+      with:
+        host: wpstage.a2hosted.com
+        username: wpstagea
+        key: ${{ secrets.cpanel }}
+        #password: 6VC+u*3bRsM7o6
+        port: 7822
+        script: |
+          cd home/wpstagea/public_html/1411/repositories/devtest
+          pwd
+          git add .
+          git stash
+          git pull origin master
+          git status
