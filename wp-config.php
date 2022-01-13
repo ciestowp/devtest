@@ -1,4 +1,5 @@
 <?php
+echo "test";
 /**
  * The base configuration for WordPress
  *
