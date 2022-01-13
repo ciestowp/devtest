@@ -23,7 +23,7 @@ jobs:
       with:
         host: wpstage.a2hosted.com
         username: wpstagea
-        key: ${{ secrets.cpanel }}
+        key: ${{ secrets.CPANEL }}
         #password: 6VC+u*3bRsM7o6
         port: 7822
         script: |
