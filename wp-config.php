@@ -1,5 +1,4 @@
 <?php
-echo "Testing for github";
 /**
  * The base configuration for WordPress
  *
