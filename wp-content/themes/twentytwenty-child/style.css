@@ -1,0 +1,49 @@
+/* 
+  Theme Name:  Twenty Twenty Child 
+  Description:  A child theme of Twenty Twenty WordPress theme. 
+  Author:       TwentyTwenty-child 
+  Template:     twentytwenty 
+  Text Domain:  twentytwenty-child 
+  Version:      2.0.0 
+  License:      GNU General Public License v2 or later License 
+  URI:  http://www.gnu.org/licenses/gpl-2.0.html */
+
+@import url("../twentytwenty/style.css");
+body {
+  background: transparent;
+  margin:0 auto;
+  max-width:1920px;
+}
+
+section {
+  padding: 0rem 0;
+}
+
+
+// Create post page form css
+
+form#createpost{width: 50%; padding: 50px;}
+form#createpost select{width: 100%;}
+.career-field {
+    padding-bottom: 10px;
+}
+input.error{border-color: red;}
+
+
+// Product gallery shop page  
+.product-thumbs {
+  display: block;
+  overflow: auto;
+  margin: 10px 0;
+  width :100%;
+}
+
+.product-thumbs .thumb {
+  float: left;
+  margin-bottom: 10px;
+  width: 30%;
+}
+
+.product-thumbs .thumb:nth-child(2) {
+  margin: 0 5%;
+}

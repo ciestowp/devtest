@@ -1,0 +1,97 @@
+.banner-section h1, .banner-section p, .banner-section .block-editor-rich-text__editable.wp-block-button__link, .article-outer-box h2, .article-section h3, .article-section p{ 
+  font-family: 'Nunito Sans', sans-serif !important;
+}
+.banner-section, .article-outer-box{
+  width: auto;
+  height: auto;
+}
+/*Banner section*/
+.banner-section .wp-block-column.is-vertically-aligned-center {
+  position: relative;
+  top: 50%;
+  left: 7%;
+  padding-left: 15px;
+}
+.banner-section h1{
+  font-weight: 900;
+}
+p.block-editor-rich-text__editable.block-editor-block-list__block.wp-block{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.wp-block-button.btn.block-editor-block-list__block.wp-block, .wp-block-buttons.block-editor-block-list__block.wp-block.block-editor-block-list__layout{
+  margin-top: 10px;
+}
+.banner-section p {
+  font-size: 15px !important;
+  letter-spacing: 0 !important;
+  line-height: 2 !important;
+}
+.wp-block-button.btn {
+    padding: 0;
+}
+.banner-section .block-editor-rich-text__editable.wp-block-button__link:hover {
+  background: #002e5b !important;
+  color: #fff !important;
+}
+/*Article section*/
+.article-outer-box, .article-container{
+  margin: 0 auto !important;
+}
+.article-section{
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  border: solid 1px #f0f0f0;
+  padding: 50px 20px;
+  text-align: center;
+}
+.article-outer-box h2 {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.wp-block-column.article-section.block-editor-block-list__block.wp-block.block-core-columns.block-editor-block-list__layout{
+  padding: 15px 20px;
+}
+.wp-block-image.img-services.block-editor-block-list__block.wp-block{
+  top: 40%;
+}
+.article-section h3 {
+  font-size: 20px !important;
+}
+.article-outer-box h2:before {
+  content: "\f275";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #f7c02e;
+  margin-right: 10px;
+}
+h2.block-editor-rich-text__editable.block-editor-block-list__block.wp-block:before{
+  content: "\f275";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #f7c02e;
+  margin-right: 10px;
+}
+.article-section p {
+  line-height: 2 !important;
+  font-size: 14px !important;
+}
+.article-section .wp-block-image.img-services.block-editor-block-list__block.wp-block{
+  top: 0%;
+}
+@media screen and (max-width:781px) {
+  .wp-block-columns.alignfull.are-vertically-aligned-center{
+    flex-basis: 100%!important;
+    margin: 0;
+  }
+  .banner-section .wp-block-column.is-vertically-aligned-center{
+    position: static;
+  }
+}
+@media screen and (max-width:1000px) {
+  .banner-section h1 {
+    font-size: 30px !important;
+  }
+}
