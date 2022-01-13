@@ -27,7 +27,7 @@ jobs:
         #password: 6VC+u*3bRsM7o6
         port: 7822
         script: |
-          cd home/wpstagea/public_html/1411/repositories/devtest
+          cd home/wpstagea/repositories/devtest
           pwd
           git add .
           git stash
